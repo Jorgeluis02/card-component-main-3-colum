@@ -21,7 +21,7 @@ body {
   flex-wrap: wrap;
   width: 90%;
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 8rem auto 1rem auto;
 }
 .container > section {
   padding: 2rem 3rem;
