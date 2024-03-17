@@ -20,12 +20,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
-  max-width: 800px;
+  max-width: 50rem;
   margin: 8rem auto 1rem auto;
+
 }
 .container > section {
   padding: 2rem 3rem;
-  flex-basis: 260px;
+  flex-basis: 16.25rem;
   flex-grow: 1;
 }
 .car__sedan,
@@ -36,16 +37,24 @@ body {
 }
 .sedan {
   background-color: var(--Brightorange);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 .suvs {
   background-color: var(--Darkcyan);
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content:space-between
+  justify-content: space-between;
 }
 .luxury {
   background-color: var(--Verydarkcyan);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 h1 {
   margin-top: 1.5rem;
@@ -57,18 +66,22 @@ p {
   font-weight: 400;
   margin-top: 2rem;
 }
-button {
+.learn__more1,
+.learn__more2,
+.learn__more3 {
   margin-top: 2rem;
   padding: 1rem 2rem;
   border: none;
+  text-decoration: none;
+  font-family:'Lexend Deca';
   border-radius: 1.5rem;
   background-color: var(--Transparentwhite);
 }
-button:hover {
+section > a:hover {
   background-color: transparent;
   cursor: pointer;
   color: var(--Transparentwhite);
-  outline: solid 2px;
+  outline: solid 0.125rem;
 }
 
 .learn__more1 {
@@ -76,7 +89,6 @@ button:hover {
 }
 .learn__more2 {
   color: var(--Darkcyan);
-  
 }
 .learn__more3 {
   color: var(--Verydarkcyan);
@@ -84,7 +96,7 @@ button:hover {
 .attribution {
   color: var(--Brightorange);
   font-family: "Lexend Deca";
-  font-size: 11px;
+  font-size: 18px;
   text-align: center;
   margin-top: 4rem;
 }
